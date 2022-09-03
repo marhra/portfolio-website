@@ -194,7 +194,7 @@
 }
 
 .hero__heading {
-    font-size: 4rem;
+    font-size: 5rem;
     background: #FF512F;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -206,8 +206,9 @@
     margin-bottom: 24px;
 }
 
+
 .hero__description {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
     display: flex;
 }
@@ -302,7 +303,7 @@
 }
 
 .about__content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     background: #FF512F;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -319,6 +320,40 @@
     margin-bottom: 5rem;
     font-size: 1rem;
     line-height: 1.5;
+}
+
+.about__arrow--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 40rem;
+}
+
+
+#about__arrow-down {
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: transparent;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    position: relative;
+    top: 15rem;
+}
+
+#about__arrow-down {
+    animation: scale 2s infinite;
+    transition: all .2s ease-out;
 }
 
 

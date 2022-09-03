@@ -24,3 +24,4 @@ menu.addEventListener('click', function() {
 // function openModal1() {
 //     modal1.style.display = 'block'
 //  }
+
