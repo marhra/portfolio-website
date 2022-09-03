@@ -68,7 +68,7 @@
     justify-content: center;
     text-decoration: none;
     padding: 0 1rem;
-    width: 125px;
+    width: 145px;
     height: 100%;
     transition: all 0.3s ease;
 }
@@ -188,9 +188,9 @@
     align-items: center;
     max-width: 1300px;
     margin: 0 auto;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
 }
 
 .hero__heading {
@@ -318,42 +318,8 @@
 .about__content p {
     color: #fff;
     margin-bottom: 5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
-}
-
-.about__arrow--wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 100%;
-    position: absolute;
-    top: 40rem;
-}
-
-
-#about__arrow-down {
-    background: #FF512F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: transparent;
-    -webkit-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 3rem;
-    position: relative;
-    top: 15rem;
-}
-
-#about__arrow-down {
-    animation: scale 2s infinite;
-    transition: all .2s ease-out;
 }
 
 
