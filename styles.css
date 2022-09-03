@@ -348,6 +348,7 @@
     .about__img--container {
         display: flex;
         justify-content: center;
+        margin-bottom: 30px;
     }
 
     .about__img--card {
@@ -361,7 +362,7 @@
     }
 
     .about__content h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-top: 2rem;
     }
 
@@ -432,8 +433,8 @@
 
 .projects__card {
     margin: 10px;
-    height: 300px;
-    width: 300px;
+    height: 425px;
+    width: 350px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -443,15 +444,20 @@
     background-color: #303030;
 }
 
-.projects__btn {
+.projects__buttons {
     display: flex;
-    justify-content: center;
-    margin-top: 16px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects__btn {
+    margin: 15px 20px;
     font-size: 1.2rem;
     background: #FF512F;
     background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
     background: linear-gradient(to right, #DD2476, #FF512F); 
-    padding: 15px 30px;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -460,7 +466,9 @@
     position: relative;
     transition: all 0.35s;
     outline: none;
-    width: 60%;
+    width: 120px;
+    position: relative;
+    top: 120px;
 }
 
 .projects__btn a {
@@ -471,6 +479,7 @@
 
 .projects__btn:hover {
     cursor: pointer;
+    background: #DD2476;
 }
 
 .projects__card:hover {
@@ -479,15 +488,27 @@
 }
 
 
-@media screen and (max-width: 1300px) {
-    .projects__wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .projects__wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .projects h1 {
+        font-size: 3rem;
+    }
+
+    .projects__buttons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px
+    }
+
+    .projects__btn:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    .projects__btn:nth-child(2) {
+        margin-top: 20px;
     }
 }
 
@@ -534,7 +555,6 @@
     color: #fff;
     margin-bottom: 5rem;
     font-size: 1rem;
-    line-height: 1.5;
 }
 
 .contact__form {
@@ -548,7 +568,7 @@ form {
     background: #303030;
     display: flex;
     flex-direction: column;
-    padding: 60px 120px;
+    padding: 60px 60px;
     width: 90%;
     max-width: 600px;
     border-radius: 4px;
@@ -560,10 +580,10 @@ form input, form textarea {
     padding: 20px;
     outline: none;
     background: #f5f5f5;
-    font-size: 1rem;
+    font-size: .9em;
 }
 
-form button {
+.contact__form--btn {
     margin-top: 16px;
     font-size: 1.2rem;
     background: #FF512F;
@@ -576,6 +596,36 @@ form button {
     margin-top: 2rem;
     cursor: pointer;
     width: 150px;
+}
+
+.contact__form--btn:hover {
+    background: #DD2476;
+}
+
+@media screen and (max-width: 990px) {
+    .contact__container  {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .contact__content {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact__content h1 {
+        font-size: 3rem;
+    }
+
+    .contact__content p {
+        font-size: 1.5rem;
+    }
 }
 
 

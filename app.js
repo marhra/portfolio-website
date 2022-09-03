@@ -8,4 +8,19 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 })
 
-// Send email from the form
+// Modal window with thank you message
+// const modal1 = document.getElementById('modal1');
+// const openBtn1 = document.getElementById('openBtn1');
+// const closeBtn1 = document.getElementById('closeBtn1');
+
+// openBtn1.addEventListener('click', openModal1);
+
+// closeBtn1.addEventListener('click', closeModal1);
+
+// function closeModal1() {
+//    modal1.style.display = 'none'
+// }
+
+// function openModal1() {
+//     modal1.style.display = 'block'
+//  }
