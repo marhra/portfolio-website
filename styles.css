@@ -54,10 +54,11 @@
     align-items: center;
     list-style: none;
     text-align: center;
+    margin-top: 20px;
 }
 
 .navbar__item {
-    height: 80px;
+    height: 40px;
 }
 
 .navbar__links {
@@ -76,6 +77,17 @@
     color: #DD2476;
     font-weight: 600;
     transition: all 0.3s ease;
+}
+
+.navbar__item a:hover {
+    border: none;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
 }
 
 @media screen and (max-width: 960px) {
@@ -214,11 +226,23 @@
     text-decoration: none;
     font-size: 3rem;
     position: relative;
-    top: 10rem;
+    top: 15rem;
 }
 
-.fa-circle-down {
+#hero__arrow-down {
+    animation: scale 2s infinite;
+    transition: all .2s ease-out;
 }
+
+@keyframes scale {
+    0% {transform: scale(1.1);
+  }
+    50% {transform: scale(1.2);
+  }
+   100% {transform: scale(1.1);
+ }
+}
+
 
 @media screen and (max-width: 768px) {
     
@@ -261,6 +285,8 @@
 
 .about__img--card img {
     width: 300px;
+    overflow: hidden;
+    animation: float 6s ease-in-out infinite;
 }
 
 .about__content a {
@@ -294,6 +320,19 @@
     font-size: 1rem;
     line-height: 1.5;
 }
+
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
 
 @media screen and (max-width: 990px) {
     .about__container {
