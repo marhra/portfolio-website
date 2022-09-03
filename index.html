@@ -7,109 +7,128 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d810f3f4b0.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
+
 <body>
-    <!-- Navbar Section -->
-    <nav class="navbar ">
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo">
-                M&nbsp<i class="fa-solid fa-code"></i>&nbspH</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#main" class="navbar__links" id="home-page">/ home
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">/ about
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#projects" class="navbar__links" id="projects-page">/ projects
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#contact" class="navbar__links" id="contact-page" > / contact
-                    </a>
-                </li>
-            </ul>
-        </div>  
-    </nav>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#main" id="navbar__logo">
+                    M&nbsp<i class="fa-solid fa-code"></i>&nbspH</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <nav>
+                    <ul aria-label="Primary" role="list" class="navbar__menu">
+                        <li class="navbar__item">
+                            <a href="#main" class="navbar__links" id="home-page">/ home
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#about" class="navbar__links" id="about-page">/ about
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#projects" class="navbar__links" id="projects-page">/ projects
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contact" class="navbar__links" id="contact-page" > / contact
+                            </a>
+                        </li>
+                    </ul>
+                <nav>
+            </div>  
+        </nav>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-        <div class="hero__container">
-            <h1 class="hero__heading">Hey. I'm Marie.</h1>
-            <p class="hero__description">Frontend Developer.</p>
-            <div class="hero__arrow-down">
-                <a href="#about" id="hero__arrow-down">
-                    <i class="fa-solid fa-circle-down"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <div class="about" id="about" >
-        <div class="about__container">
-            <div class="about__img--container">
-                <div class="about__img--card">
-                    <img src="images/code-girl.svg" alt="code girl">
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <h1 class="hero__heading">Hey. I'm Marie.</h1>
+                <p class="hero__description">Frontend Developer.</p>
+                <div class="hero__arrow-down">
+                    <a href="#about" id="hero__arrow-down">
+                        <i class="fa-solid fa-circle-down"></i></a>
                 </div>
             </div>
-            <div class="about__content">
-                <h1>/ about me</h1>
-                <p>I’m a frontend developer with a business background. In other words, I went to business school, worked as an account executive and became a frontend developer.<br><br> Yeah, why not!<br><br>
-                    I started my coding journey a bit more than two years ago. I'm passionate about clean, minimalist and interesting design. The main area of my expertise is frontend development, HTML, CSS, JS, building small and medium responsive websites, animated banner ads, and interactive newsletters.<br><br>
-                    Visit my <a href="https://www.linkedin.com/in/marie-hrabovska/" class="about__link--linkedin">linkedin</a> profile for more details or just hit me up with your project ideas.</p>
-            </div>
-        </div>
-    </div>
+        </section>
 
-     <!-- Projects Section -->
-     <div class="projects" id="projects">
-        <h1>/ my projects</h1>
-        <div class="projects__wrapper">
-            <div class="projects__card">
-                <h2>coming soon...</h2>
-                <button class="projects__btn"><a href='#'>Explore</a></button>
+        <!-- About Section -->
+        <section class="about" id="about" >
+            <div class="about__container">
+                <div class="about__img--container">
+                    <div class="about__img--card">
+                        <img src="images/code-girl.svg" alt="code girl">
+                    </div>
+                </div>
+                <div class="about__content">
+                    <h1>/ about me</h1>
+                    <p>I’m a frontend developer with a business background. In other words, I went to business school, worked as an account executive and became a frontend developer.<br><br> Yey!<br><br>
+                        I started my coding journey a bit more than two years ago. I'm passionate about clean, minimalist and interesting design. The main area of my expertise is frontend development, HTML, CSS, JS, building small and medium responsive websites, animated banner ads, and interactive newsletters.<br><br>
+                        Visit my <a href="https://www.linkedin.com/in/marie-hrabovska/" class="about__link--linkedin">linkedin</a> profile for more details or just hit me up with your project ideas.</p>
+                </div>
             </div>
-            <div class="projects__card">
-                <h2>coming soon...</h2>
-                <button class="projects__btn"><a href='#'>Explore</a></button>
-            </div>
-            <div class="projects__card">
-                <h2>coming soon...</h2>
-                <button class="projects__btn"><a href='#'>Explore</a></button>
-            </div>
-    </div>
+        </section>
 
-    <!-- Contact Section -->
-    <div class="contact" id="contact">
-        <div class="contact__container">
-            <div class="contact__content">
-                <h1>/ contact me</h1>
-                <p>Got an inquiry or just want to chat?<br><br>
-                    Fell free to contact me!</p>
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h1>/ my projects</h1>
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>coming soon...</h2>
+                    <button class="projects__btn"><a href='#'>Explore</a></button>
+                </div>
+                <div class="projects__card">
+                    <h2>coming soon...</h2>
+                    <button class="projects__btn"><a href='#'>Explore</a></button>
+                </div>
+                <div class="projects__card">
+                    <h2>coming soon...</h2>
+                    <button class="projects__btn"><a href='#'>Explore</a></button>
+                </div>
+            </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact__container">
+                <div class="contact__content">
+                    <h1>/ contact me</h1>
+                    <p>Got an inquiry or just want to chat?<br><br>
+                        Fell free to contact me!</p>
+                </div>
+                <div class="contact__form">
+                    <form action="https://formsubmit.co/marie.hrabovska@gmail.com" method="POST">
+                        <input type="text" id="name" placeholder="Your name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="message" row="4" placeholder="Write your message here"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    </form>
+                    </form>
+                </div>
             </div>
-            <div class="contact__socials">
-                <div class="contact__socials--wrapper">
+        </section>
+    </main>
+
+     <!-- Footer Section -->
+    <footer>
+        <nav arial-label="Footer">
+            <div class="footer__socials">
+                <div class="footer__socials--wrapper">
                     <a href="mailto:marie.hrabovska@gmail.com"><i class="fa-regular fa-at"></i></a>
                     <a href="https://www.linkedin.com/in/marie-hrabovska/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://github.com/marhra" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
-
-     <!-- Footer Section -->
-    <div class="footer__container">
-       <p>&copy Marie Hrabovska, 2022 </p>
-    </div>
-
+            <div class="footer__content">
+                <p>&copy Marie Hrabovska, 2022 </p>
+            </div>
+        </nav>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
