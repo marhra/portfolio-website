@@ -350,8 +350,9 @@
 .about__content a {
     text-decoration: none;
     position: relative;
-    font-weight: 700;
+    text-decoration: underline;
     color: #fff;
+    text-underline-position: under
 }
 
 .about__content {
@@ -392,7 +393,7 @@
     }
   }
 
-  .snippet {
+  .about__snippet {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -869,6 +870,8 @@ footer {
     transform: translateY(0);
     opacity: 1;
   }
+
+  
 
 
 
