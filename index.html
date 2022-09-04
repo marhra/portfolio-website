@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d810f3f4b0.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
 </head>
 
@@ -50,7 +51,7 @@
         <section class="hero" id="home">
             <div class="hero__container">
                 <h1 class="hero__heading">Hey. I am Marie.</h1>
-                <p class="hero__description">Frontend Developer.</p>
+                <p class="line anim-typewriter">Frontend Developer.</p>
                 <div class="hero__arrow-down">
                     <a href="#about" id="hero__arrow-down">
                         <i class="fa-solid fa-circle-down"></i></a>
@@ -60,62 +61,76 @@
 
         <!-- About Section -->
         <section class="about" id="about" >
-            <div class="about__container">
+            <div class="about__container reveal">
                 <div class="about__img--container">
                     <div class="about__img--card">
                         <img src="images/code-girl.svg" alt="code girl">
                     </div>
                 </div>
                 <div class="about__content">
-                    <h1>/ about me</h1>
+                    <h1>&nbsp/ about me</h1>
                     <p>I’m a frontend developer with a business background. In other words, I went to business school, worked as an account executive and became a frontend developer.<br><br> Yey!<br><br>
                         I started my coding journey a bit more than two years ago. I'm passionate about clean, minimalist and interesting design. The main area of my expertise is frontend development, HTML, CSS, JS, building small and medium responsive websites, animated banner ads, and interactive newsletters.<br><br>
                         Visit my <a href="https://www.linkedin.com/in/marie-hrabovska/" class="about__link--linkedin">linkedin</a> profile for more details or just hit me up with your project ideas.</p>
+                </div>
+            </div>
+            <div class="snippet" data-title=".dot-typing">
+                <div class="stage">
+                    <div class="dot-typing"></div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section class="projects" id="projects">
-            <h1>/ my projects</h1>
-            <div class="projects__wrapper">
-                <div class="projects__card">
-                    <div class="projects__content">
-                        <h2>coming soon...</h2>
+            <div class="projects__container reveal">
+                <h1>&nbsp/ my projects</h1>
+                <div class="projects__wrapper">
+                    <div class="projects__card">
+                        <div class="projects__content">
+                            <h2>coming soon...</h2>
+                        </div>
+                        <div class="projects__buttons">
+                            <button class="projects__btn"><a href=''>Source</a></button>
+                            <button class="projects__btn"><a href=''>View</a></button>
+                        </div>  
                     </div>
-                    <div class="projects__buttons">
-                        <button class="projects__btn"><a href=''>Source</a></button>
-                        <button class="projects__btn"><a href=''>View</a></button>
-                    </div>  
-                </div>
-                <div class="projects__card">
-                    <div class="projects__content">
-                        <h2>coming soon...</h2>
+                    <div class="projects__card">
+                        <div class="projects__content">
+                            <h2>coming soon...</h2>
+                        </div>
+                        <div class="projects__buttons">
+                            <button class="projects__btn"><a href=''>Source</a></button>
+                            <button class="projects__btn"><a href=''>View</a></button>
+                        </div>  
                     </div>
-                    <div class="projects__buttons">
-                        <button class="projects__btn"><a href=''>Source</a></button>
-                        <button class="projects__btn"><a href=''>View</a></button>
-                    </div>  
-                </div>
-                <div class="projects__card">
-                    <div class="projects__content">
-                        <h2>coming soon...</h2>
+                    <div class="projects__card">
+                        <div class="projects__content">
+                            <h2>coming soon...</h2>
+                        </div>
+                        <div class="projects__buttons">
+                            <button class="projects__btn"><a href=''>Source</a></button>
+                            <button class="projects__btn"><a href=''>View</a></button>
+                        </div>  
                     </div>
-                    <div class="projects__buttons">
-                        <button class="projects__btn"><a href=''>Source</a></button>
-                        <button class="projects__btn"><a href=''>View</a></button>
-                    </div>  
                 </div>
             </section>
 
         <!-- Contact Section -->
         <section class="contact" id="contact">
-            <div class="contact__container">
+            <div class="contact__container reveal">
                 <div class="contact__content">
-                    <h1>/ contact me</h1>
-                    <p>Got an inquiry or just want to chat?<br><br>
-                        Fell free to contact me!</p>
-                </div>
+                    <h1>&nbsp/ contact me</h1>
+                    <p>Do you have any questions, queries or just want to chat?<br><br>
+                        Please feel free to drop me a line!</p>
+                    <div class="contact__socials">
+                        <div class="contact__socials--wrapper">
+                            <a href="mailto:marie.hrabovska@gmail.com"><i class="fa-regular fa-at"></i></a>
+                            <a href="https://www.linkedin.com/in/marie-hrabovska/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/marhra" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+            </div>
                 <div class="contact__form">
                     <form action="https://formsubmit.co/marie.hrabovska@gmail.com" method="POST">
                         <input type="text" id="name" placeholder="Your name" required>
@@ -130,18 +145,11 @@
 
      <!-- Footer Section -->
     <footer>
-        <nav arial-label="Footer">
-            <div class="footer__socials">
-                <div class="footer__socials--wrapper">
-                    <a href="mailto:marie.hrabovska@gmail.com"><i class="fa-regular fa-at"></i></a>
-                    <a href="https://www.linkedin.com/in/marie-hrabovska/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/marhra" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
+        <div class="footer__container">
             <div class="footer__content">
                 <p>&copy Marie Hrabovska, 2022 </p>
             </div>
-        </nav>
+        </div>
     </footer>
     <script src="app.js"></script>
 </body>
