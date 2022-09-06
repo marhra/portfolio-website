@@ -548,6 +548,20 @@
     background-color: #303030;
 }
 
+.projects__content h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.projects__content p {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+
 .projects__buttons {
     display: flex;
     flex-direction: row;
@@ -572,7 +586,7 @@
     outline: none;
     width: 120px;
     position: relative;
-    top: 120px;
+    top: 70px;
 }
 
 .projects__btn a {
