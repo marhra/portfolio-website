@@ -149,7 +149,7 @@
         width: 100%;
         display: table;
     }
-    
+
     #mobile-menu {
         position: absolute;
         top: 20%;
@@ -553,6 +553,13 @@
 .projects__content h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.projects__content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     color: #fff;
 }
